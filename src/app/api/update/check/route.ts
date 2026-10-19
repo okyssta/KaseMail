@@ -3,7 +3,7 @@ import { apiHandler } from "@/lib/api-handler"
 
 export const GET = apiHandler(async () => {
   const current = process.env.NEXT_PUBLIC_APP_VERSION || "0.1.0"
-  const repo = process.env.KASEMAIL_GITHUB_REPO || "kyssta-exe/KaseMail"
+  const repo = process.env.KASEMAIL_GITHUB_REPO || "okyssta/KaseMail"
   try {
     const res = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
       signal: AbortSignal.timeout(5000),

@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT_DIR="/opt/kasemail"
 APP_DIR="${ROOT_DIR}/app"
-REPO_URL="${KASEMAIL_REPO_URL:-https://github.com/kyssta-exe/KaseMail.git}"
+REPO_URL="${KASEMAIL_REPO_URL:-https://github.com/okyssta/KaseMail.git}"
 ENV_FILE="${APP_DIR}/.env.production"
 COMPOSE_FILE="${APP_DIR}/docker-compose.yml"
 BACKUP_DIR="${ROOT_DIR}/backups/pre-update-$(date +%Y%m%d-%H%M%S)"

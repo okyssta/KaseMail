@@ -95,7 +95,7 @@ Last updated: 2026-05-24
 - [x] Removed nonfunctional mailbox Webmail/SMTP/IMAP toggles from create form.
 - [x] Password reset request now sends reset email through configured SMTP instead of logging token.
 - [x] Added SMTP env/config and production warnings when SMTP is missing.
-- [x] Update check now uses `KASEMAIL_GITHUB_REPO`, defaulting to `kyssta-exe/KaseMail`.
+- [x] Update check now uses `KASEMAIL_GITHUB_REPO`, defaulting to `okyssta/KaseMail`.
 - [x] Settings PATCH routes now use strict Zod schemas.
 - [x] Mailbox create/reset validation tightened.
 - [x] Mailbox password reset now calls mail-core adapter, not only local DB.

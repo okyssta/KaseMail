@@ -39,7 +39,7 @@ Self-hosted email management panel with webmail, domain/DNS management, quaranti
 
 ```bash
 ssh root@your-vps
-git clone https://github.com/kyssta-exe/KaseMail /opt/kasemail
+git clone https://github.com/okyssta/KaseMail /opt/kasemail
 cd /opt/kasemail
 sudo bash scripts/install-vps.sh
 ```
@@ -102,7 +102,7 @@ npm run dev
 | `MAIL_IP` | Public mail server IP for A-record checks | optional |
 | `SMTP_HOST` | SMTP server for password reset email | required for password resets |
 | `SMTP_FROM` | Sender address for password reset email | required for password resets |
-| `KASEMAIL_GITHUB_REPO` | GitHub repo for update checks | `kyssta-exe/KaseMail` |
+| `KASEMAIL_GITHUB_REPO` | GitHub repo for update checks | `okyssta/KaseMail` |
 
 ## Commands
 

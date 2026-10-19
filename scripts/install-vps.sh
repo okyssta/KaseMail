@@ -4,7 +4,7 @@
 set -Eeuo pipefail
 
 APP_DIR="/opt/kasemail"
-REPO_URL="${KASEMAIL_REPO_URL:-https://github.com/kyssta-exe/KaseMail.git}"
+REPO_URL="${KASEMAIL_REPO_URL:-https://github.com/okyssta/KaseMail.git}"
 MAIL_CORE="${MAIL_CORE:-stalwart}"
 PUBLIC_IP="$(curl -4fsS https://api.ipify.org 2>/dev/null || echo "YOUR_SERVER_IP")"
 
@@ -210,7 +210,7 @@ MAIL_IP=${PUBLIC_IP}
 NEXT_PUBLIC_APP_URL=https://${PANEL_DOMAIN}
 NEXT_PUBLIC_WEBMAIL_URL=https://${WEBMAIL_DOMAIN}
 NEXT_PUBLIC_APP_VERSION=$(git describe --tags --abbrev=0 2>/dev/null || echo "0.1.0")
-KASEMAIL_GITHUB_REPO=kyssta-exe/KaseMail
+KASEMAIL_GITHUB_REPO=okyssta/KaseMail
 
 # Encryption
 ENCRYPTION_KEY=${ENCRYPTION_KEY}
